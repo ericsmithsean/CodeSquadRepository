@@ -1,75 +1,56 @@
-:root {
-    --forest-green: #1f4d3a;
-    --burgundy: #800020;
-    --cream: #f8f2e8;
-    --light-green: #dce9df;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    background-color: var(--forest-green);
-    color: var(--burgundy);
+    background-color: midnightblue;
+    background-image: url("images/bangkok-night.jpg");
+    background-size: cover;
+    background-position: center;
+    color: maroon;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
 .hero {
-    min-height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 100px 20px;
     text-align: center;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.30),
-            rgba(0, 0, 0, 0.30)
-        ),
-        url("https://images.unsplash.com/photo-1565116305319-4c87a7a4e368?auto=format&fit=crop&fm=jpg&q=80&w=2000");
-
-    background-size: cover;
-    background-position: center;
 }
 
 .hero-overlay {
-    background: rgba(248, 242, 232, 0.88);
-    padding: 25px 45px;
+    background-color: linen;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .hero h1 {
     margin: 0;
-    font-size: clamp(2.5rem, 7vw, 5rem);
-    letter-spacing: 2px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 60px;
 }
 
 .hero p {
     margin: 5px 0 0;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .container {
-    width: min(1100px, 90%);
+    width: 80%;
     margin: 40px auto;
 }
 
 section {
-    background-color: var(--cream);
+    background-color: linen;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 h2 {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 h3 {
@@ -80,63 +61,40 @@ li {
     margin: 6px 0;
 }
 
-.links a {
-    color: var(--burgundy);
+a {
+    color: maroon;
     font-weight: bold;
 }
 
-.links a:hover {
-    text-decoration-thickness: 3px;
+a:hover {
+    color: darkgreen;
 }
 
 .travel {
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: bold;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
 figure {
-    margin: 0;
-    background: var(--light-green);
-    border: 3px solid var(--burgundy);
+    background-color: honeydew;
+    border: 3px solid maroon;
     border-radius: 10px;
-    overflow: hidden;
+    padding: 15px;
+    text-align: center;
 }
 
 figure img {
-    display: block;
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
+    width: 300px;
 }
 
 figcaption {
     padding: 10px;
-    text-align: center;
     font-weight: bold;
 }
 
 footer {
+    background-color: black;
+    color: linen;
     text-align: center;
     padding: 25px;
-    color: var(--cream);
-}
-
-@media (max-width: 800px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .hero {
-        min-height: 330px;
-    }
-
-    .hero-overlay {
-        padding: 20px 25px;
-    }
 }
